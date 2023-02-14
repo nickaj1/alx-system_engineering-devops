@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "$WATER $STIR" | {read -r water stir sum=$((water + stir))printf"%s\n""obase=bestchol $sum" | xxd -r -p | iconv -t bestchol}
+sum=$(( $(echo "ibase=water $WATER") $(echo "ibase=stir $STIR"))) 
+echo "obase=bestchol $sum"
