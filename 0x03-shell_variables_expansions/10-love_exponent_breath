@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo "scale=4 $BREATH^$LOVE")
+echo $(echo "scale=4 2^1 $BREATH^$LOVE")
